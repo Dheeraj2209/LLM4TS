@@ -16,7 +16,7 @@ LLM4TS is a modular TypeScript library that simplifies working with Large Langua
 
 ---
 LLM4TS aims to bring clarity, control, and extensibility to the development of applications that rely on large language models. Whether you're building intelligent chat systems, semantic search, or prompt-driven tools, LLM4TS provides a structured TypeScript-first foundation to interact with multiple LLM providers while abstracting the complexities of prompt construction, streaming, and caching.
-## Getting Started
+
 
 
 
