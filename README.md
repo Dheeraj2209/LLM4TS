@@ -34,3 +34,16 @@ const reply = await chat.send([
 ]);
 
 console.log(reply.choices[0].message.content); // "Paris"
+
+import { PromptTemplate } from 'llm4ts';
+
+const template = new PromptTemplate({
+  template: 'Translate this to Spanish: {{text}}'
+});
+
+const prompt = template.format({ text: 'Good morning' });
+
+const response = await chat.send([
+  { role: 'user', content: prompt }
+]);
+
