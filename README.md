@@ -23,27 +23,16 @@ LLM4TS is a modular TypeScript library that simplifies working with Large Langua
 ```bash
 npm install llm4ts
 
-import { OpenAI } from 'llm4ts/providers';
-import { Chat } from 'llm4ts';
 
-const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const chat = new Chat(client, { model: 'gpt-4' });
-
-const reply = await chat.send([
-  { role: 'user', content: 'What is the capital of France?' }
-]);
-
-console.log(reply.choices[0].message.content); // "Paris"
-
-import { PromptTemplate } from 'llm4ts';
-
-const template = new PromptTemplate({
-  template: 'Translate this to Spanish: {{text}}'
-});
-
-const prompt = template.format({ text: 'Good morning' });
-
-const response = await chat.send([
-  { role: 'user', content: prompt }
-]);
+```
+```
+LLM4TS/
+├── src/               # Core source code
+├── examples/          # Example apps and usage
+├── tests/             # Unit and integration tests
+├── docs/              # Documentation
+├── .env               # API keys and config
+├── package.json
+└── README.md
+```
 
