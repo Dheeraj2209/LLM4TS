@@ -1,0 +1,1 @@
+LLM4TS is a modular TypeScript library that simplifies working with Large Language Models (LLMs). It offers a unified, extensible interface to send chat or text prompts, handle responses, stream tokens, cache results, and switch providers (e.g., OpenAI, Anthropic, Local models). Designed to work in both Node.js and browser environments.
